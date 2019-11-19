@@ -15,7 +15,7 @@
 def getProxy():
 
     import requests
-    url = "http://47.107.41.209:8000/proxy/api/get_ip_bs?appKey=02e4b0e74bc24c7aaa8bf43bc53c469d&format=raw&count=1"
+    url = "http://localhost:8000/proxy/api/get_ip_bs?appKey=&format=raw&count=1"
 
     req = requests.get(url=url)
     return req.json()[0]
